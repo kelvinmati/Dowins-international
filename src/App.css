@@ -1,0 +1,34 @@
+/* swiper js styling */
+
+.swiper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    cursor: pointer;
+}
+
+.previousButton,
+.nextButton {
+    background-color: rgba(0, 0, 0, 0.411);
+    color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.previousButton:hover,
+.nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+.nextButton {
+    right: 20px;
+}
+
+.previousButton {
+    left: 20px;
+}
