@@ -3,7 +3,7 @@ const Mission = () => {
     return (
         <div className=" pt-12 ">
             <div className=" bg-blue text-gray-200 grid lg:grid-cols-2  gap-12 md:gap-0 items-center py-8 lg:p-0 ">
-                <div className="grid   md:grid-cols-2 gap-12 md:gap-0  text-center  w-container_width mx-auto">
+                <div className="grid   md:grid-cols-2 gap-12 md:gap-0  text-center  w-mobile_width  md:w-container_width mx-auto">
                     <div>
                         <p className=" flex justify-center mb-3">
                             <svg
@@ -55,19 +55,19 @@ const Mission = () => {
                 </div>
                 <div className="h-80 w-full bg-white hidden lg:block">
                     <img
-                        src="https://res.cloudinary.com/kelvin45/image/upload/v1651819747/pexels-kampus-production-5940846_kqcvdx.jpg"
+                        src="https://res.cloudinary.com/kelvin45/image/upload/v1652050694/Dowins/image4_esqdiu.jpg"
                         alt=""
                         className="h-full w-full object-cover"
                     />
                 </div>
                 <div className="  w-full bg-white hidden lg:block ">
                     <img
-                        src="https://res.cloudinary.com/kelvin45/image/upload/v1651819769/meeting_dlrvd6.jpg"
+                        src="https://res.cloudinary.com/kelvin45/image/upload/v1652050694/Dowins/image2_avcw1w.jpg"
                         alt=""
                         className="h-full w-full object-cover"
                     />
                 </div>
-                <div className=" w-container_width mx-auto space-y-3">
+                <div className="w-mobile_width md:w-container_width mx-auto space-y-3">
                     <p className="flex justify-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ const Mission = () => {
                     </p>
                     <p className="text-center text-2xl ">OUR CORE VALUES</p>
 
-                    <div className="space-y-3">
+                    <div className="space-y-5">
                         <li>
                             <b className="text-white">Empowering</b>-We create
                             an environment where each person is engaged and
@@ -108,6 +108,16 @@ const Mission = () => {
                             is to offer quality and professional service to our
                             clients becomes a great virtue that Drives our
                             organizational business.
+                        </li>{" "}
+                        <li>
+                            <b className="text-white">Efficiency</b>-Efficiency
+                            is at the center of our service delivery.
+                            organizational business.
+                        </li>{" "}
+                        <li>
+                            <b className="text-white">Expertise</b>-We believe
+                            in delivering with high level of skills and
+                            experience at the forefront of our services.
                         </li>{" "}
                     </div>
                 </div>

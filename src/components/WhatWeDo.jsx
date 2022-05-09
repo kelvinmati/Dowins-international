@@ -1,12 +1,12 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const WhatWeDo = () => {
     return (
-        <div className="py-14">
-            <div className="w-container_width mx-auto grid md:grid-cols-2 gap-20  items-center">
-                <div>
+        <div className="pt-5 md:py-14" id="what_we_do">
+            <div className=" w-mobile_width md:w-container_width mx-auto grid md:grid-cols-2 gap-20  items-center">
+                <div className="">
                     <img
-                        src="https://res.cloudinary.com/kelvin45/image/upload/v1651819783/team_xapa7e.jpg"
+                        src="https://pbs.twimg.com/media/D2KCdWCX0AEz4Z1?format=jpg&name=small"
                         alt=""
                     />
                 </div>
@@ -16,18 +16,27 @@ const WhatWeDo = () => {
                         <p className="text-lg text-orange">get to know us</p>
                     </div>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Sequi adipisci labore repellat blanditiis deleniti
-                        dolore.
+                        Dowins International Solutions is a company that deals
+                        with; Motivation and Mentorship programs, Academic
+                        Coaching, Business consultancy at both individual and
+                        corporate levels.
                     </p>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Sequi adipisci labore repellat blanditiis deleniti
-                        dolore.
+                        We have a team of specialists who handle the programs
+                        above thouroughly with a strong sense of customer
+                        satisfaction
                     </p>
-                    <button className="p-2 bg-orange text-white rounded-full">
-                        Learn More
-                    </button>
+                    <p>
+                        It is in the veins of our company to pride in the growth
+                        of our customers
+                    </p>
+                    <div>
+                        <Link to="/about">
+                            <button className="p-3 bg-orange hover:bg-blue transition text-white rounded-full">
+                                Learn More
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

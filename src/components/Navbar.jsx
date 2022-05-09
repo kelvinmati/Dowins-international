@@ -1,31 +1,89 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
     const [sidebar, setSidebar] = useState(false);
     const ToggleSideBar = () => {
         setSidebar(!sidebar);
     };
-    console.log(sidebar);
+    const [active, setActive] = useState("");
+
+    console.log(active);
     return (
-        <nav className="bg-white relative">
-            <div className="w-container_width h-24 mx-auto flex justify-between items-center">
-                <div className="">
-                    <img
-                        src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,h_140,w_198/v1651792128/logos/logo_qhsxkh.png"
-                        alt=""
-                    />
-                </div>
+        <nav className="bg-white relative shadow-sm">
+            <div className=" w-mobile_width md:w-container_width h-24 mx-auto flex justify-between items-center ">
+                <Link to="/">
+                    <div>
+                        <img
+                            src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,h_140,w_198/v1651792128/logos/logo_qhsxkh.png"
+                            alt=""
+                        />
+                    </div>
+                </Link>
                 <div className="md:flex space-x-10 hidden">
-                    <li className="list-none text-blue ">Home</li>
-                    <li className="list-none text-blue ">What we do</li>
-                    <li className="list-none text-blue ">Why us</li>
-                    <li className="list-none text-blue ">Contact Us</li>
+                    <Link to="/">
+                        <li
+                            onClick={() => setActive("Home")}
+                            className={
+                                active === "Home"
+                                    ? "list-none text-orange"
+                                    : "list-none text-blue"
+                            }
+                        >
+                            Home
+                        </li>
+                    </Link>
+
+                    <a href="#what_we_do">
+                        <li
+                            onClick={() => setActive("What we do")}
+                            className={
+                                active === "What we do"
+                                    ? "list-none text-orange"
+                                    : "list-none text-blue"
+                            }
+                        >
+                            What we do
+                        </li>
+                    </a>
+
+                    <Link to="/about">
+                        <li
+                            onClick={() => setActive("About")}
+                            className={
+                                active === "About"
+                                    ? "list-none text-orange"
+                                    : "list-none text-blue"
+                            }
+                        >
+                            About
+                        </li>
+                    </Link>
+                    <Link to="/services">
+                        <li
+                            onClick={() => setActive("Services")}
+                            className={
+                                active === "Services"
+                                    ? "list-none text-orange"
+                                    : "list-none text-blue"
+                            }
+                        >
+                            Services
+                        </li>
+                    </Link>
+                    <Link to="contact">
+                        <li
+                            onClick={() => setActive("Contact")}
+                            className={
+                                active === "Contact"
+                                    ? "list-none text-orange"
+                                    : "list-none text-blue"
+                            }
+                        >
+                            Contact
+                        </li>
+                    </Link>
                 </div>
-                {/* <div className="hidden md:block">
-                    <button className="p-2 bg-orange text-white rounded-full">
-                        Get started
-                    </button>
-                </div> */}
+
                 <div className="md:hidden " onClick={ToggleSideBar}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -46,17 +104,42 @@ const Navbar = () => {
             <div
                 className={
                     sidebar
-                        ? "bg-white text-center space-y-2 p-2  transition -translate-y-0 ease-in-out absolute w-full z-10  md:hidden block rounded-b-lg "
-                        : "bg-white text-center space-y-2 p-2 -translate-y-56 absolute  transition ease-in-out w-full z-10  md:hidden block rounded-b-lg "
+                        ? "bg-white text-center  p-5   transition -translate-y-0 ease-in-out absolute w-full z-10  md:hidden block rounded-b-lg "
+                        : "bg-white text-center  p-5  -translate-y-80 absolute  transition ease-in-out w-full z-10  md:hidden block rounded-b-lg "
                 }
             >
-                <li className="list-none text-blue ">Home</li>
-                <li className="list-none text-blue ">What we do</li>
-                <li className="list-none text-blue ">Why us</li>
-                <li className="list-none text-blue ">Contact Us</li>
-                {/* <button className="p-2 bg-orange text-white rounded-full">
-                    Get started
-                </button> */}
+                <Link to="/">
+                    <li
+                        className="list-none text-blue my-3"
+                        onClick={ToggleSideBar}
+                    >
+                        Home
+                    </li>
+                </Link>
+                <Link to="about">
+                    <li
+                        className="list-none text-blue my-3"
+                        onClick={ToggleSideBar}
+                    >
+                        About
+                    </li>
+                </Link>
+                <Link to="services">
+                    <li
+                        className="list-none text-blue my-3"
+                        onClick={ToggleSideBar}
+                    >
+                        Services
+                    </li>
+                </Link>
+                <Link to="contact">
+                    <li
+                        className="list-none text-blue my-3"
+                        onClick={ToggleSideBar}
+                    >
+                        Contact
+                    </li>
+                </Link>
             </div>
         </nav>
     );

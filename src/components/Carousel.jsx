@@ -13,7 +13,7 @@ SwiperCore.use([Navigation, Autoplay, Pagination]);
 const Carousel = () => {
     const swiperRef = useRef(null);
     return (
-        <div>
+        <div className="relative">
             {" "}
             <Swiper
                 ref={swiperRef}
@@ -67,7 +67,7 @@ const Carousel = () => {
                 </div>
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <div className="md:h-height h-auto">
+                        <div className="md:h-height h-56">
                             <img
                                 className="object-cover h-full w-full"
                                 src={image.img}
@@ -77,6 +77,15 @@ const Carousel = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <div className=" bg-blue text-white md:absolute md:right-0 md:bottom-0 z-50 md:w-64  md:rounded-tl-xl p-3 w-mobile_width mx-auto mt-5 rounded md:rounded-none ">
+                <p className="text-xl text-orange">Key areas of operations</p>
+
+                <ul>
+                    <li>Education</li>
+                    <li>Business Operations</li>
+                    <li>Leadership</li>
+                </ul>
+            </div>
         </div>
     );
 };
@@ -84,12 +93,15 @@ const Carousel = () => {
 export default Carousel;
 const images = [
     {
-        img: "https://res.cloudinary.com/kelvin45/image/upload/v1651819747/pexels-kampus-production-5940846_kqcvdx.jpg",
+        img: "https://res.cloudinary.com/kelvin45/image/upload/v1652050758/Dowins/team_xnyolr.jpg",
     },
     {
-        img: "https://res.cloudinary.com/kelvin45/image/upload/v1651819783/team_xapa7e.jpg",
+        img: "https://res.cloudinary.com/kelvin45/image/upload/v1652050748/Dowins/pexels-kampus-production-5940846_jok9se.jpg",
     },
     {
-        img: "https://res.cloudinary.com/kelvin45/image/upload/v1651819769/meeting_dlrvd6.jpg",
+        img: "https://res.cloudinary.com/kelvin45/image/upload/v1652050741/Dowins/meeting_zprh5w.jpg",
+    },
+    {
+        img: "https://pbs.twimg.com/media/D1CR6nlWwAAbDgE?format=png&name=small",
     },
 ];

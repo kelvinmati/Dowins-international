@@ -2,15 +2,15 @@ import React from "react";
 
 const Clients = () => {
     return (
-        <div className="py-14">
-            <div className="text-center py-8">
+        <div>
+            <div className=" w-mobile_width md:w-container_width mx-auto md:text-center  py-10 px-1.5">
                 <p className="text-2xl">OUR CLIENT PORTFOLIO</p>
                 <p className="text-lg text-orange">
                     below are some of the schools we've attended and nurtured
                     students
                 </p>
             </div>
-            <div className="w-container_width mx-auto  grid  md:grid-cols-5 gap-4 ">
+            <div className="w-mobile_width md:w-container_width mx-auto  grid  md:grid-cols-5 gap-4 ">
                 <div className="shadow bg-gray-50 p-2">
                     <div className="h-28 flex   pb-4  justify-center items-center">
                         <img
