@@ -96,7 +96,7 @@ const images = [
         img: "https://res.cloudinary.com/kelvin45/image/upload/v1652050758/Dowins/team_xnyolr.jpg",
     },
     {
-        img: "https://res.cloudinary.com/kelvin45/image/upload/v1652050748/Dowins/pexels-kampus-production-5940846_jok9se.jpg",
+        img: "https://res.cloudinary.com/kelvin45/image/upload/v1651819747/pexels-kampus-production-5940846_kqcvdx.jpg",
     },
     {
         img: "https://res.cloudinary.com/kelvin45/image/upload/v1652050741/Dowins/meeting_zprh5w.jpg",

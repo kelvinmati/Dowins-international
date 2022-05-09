@@ -6,7 +6,6 @@ const Navbar = () => {
         setSidebar(!sidebar);
     };
     const [active, setActive] = useState("");
-
     console.log(active);
     return (
         <nav className="bg-white relative shadow-sm">
