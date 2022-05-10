@@ -19,7 +19,7 @@ const Contact = () => {
                         <p className="text-5xl">
                             We would love to hear from you
                         </p>
-                        <p className="text-xl py-3">get in touch</p>
+                        <p className="text-xl py-3">Get in touch</p>
                     </div>
 
                     <div className="flex items-center space-x-2 text-orange ">
@@ -44,7 +44,10 @@ const Contact = () => {
                     <p className="text-2xl text-center py-3 ">
                         Kindly enter your details
                     </p>
-                    <form className="flex flex-col space-y-6">
+                    <form
+                        className="flex flex-col space-y-6"
+                        onSubmit={(e) => e.preventDefault()}
+                    >
                         <input
                             className="border p-2 outline-none rounded"
                             type="text"

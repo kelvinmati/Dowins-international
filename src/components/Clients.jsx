@@ -6,7 +6,7 @@ const Clients = () => {
             <div className=" w-mobile_width md:w-container_width mx-auto md:text-center  py-10 px-1.5">
                 <p className="text-2xl">OUR CLIENT PORTFOLIO</p>
                 <p className="text-lg text-orange">
-                    below are some of the schools we've attended and nurtured
+                    Below are some of the schools we've attended and nurtured
                     students
                 </p>
             </div>

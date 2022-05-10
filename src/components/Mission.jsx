@@ -26,7 +26,7 @@ const Mission = () => {
                                 />
                             </svg>
                         </p>
-                        <p className="text-2xl">VISION</p>
+                        <p className="text-2xl text-white">VISION</p>
                         <p>
                             To be a center of Excellent Performance where ideas
                             are converted into actual results.
@@ -49,7 +49,7 @@ const Mission = () => {
                                 />
                             </svg>
                         </p>
-                        <p className="text-2xl">MISSION</p>
+                        <p className="text-2xl text-white ">MISSION</p>
                         <p>To Empower the Society through Inspiration.</p>
                     </div>
                 </div>
@@ -84,7 +84,9 @@ const Mission = () => {
                             />
                         </svg>
                     </p>
-                    <p className="text-center text-2xl ">OUR CORE VALUES</p>
+                    <p className="text-center text-2xl text-white ">
+                        OUR CORE VALUES
+                    </p>
 
                     <div className="space-y-5">
                         <li>
@@ -99,7 +101,7 @@ const Mission = () => {
                             customers face in day in day out engagements.
                         </li>{" "}
                         <li>
-                            <b className="text-white">Innovation</b>-Wwe feature
+                            <b className="text-white">Innovation</b>-We feature
                             new methods that are aimed at producing the desired
                             key results by our customers.
                         </li>{" "}
@@ -112,7 +114,6 @@ const Mission = () => {
                         <li>
                             <b className="text-white">Efficiency</b>-Efficiency
                             is at the center of our service delivery.
-                            organizational business.
                         </li>{" "}
                         <li>
                             <b className="text-white">Expertise</b>-We believe

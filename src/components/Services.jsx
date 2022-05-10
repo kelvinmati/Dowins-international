@@ -18,46 +18,59 @@ const Services = () => {
                     </p>
                 </div>
             </div>
+
             <div className="py-10 bg-gray-50">
-                <div className="w-mobile_width md:w-container_width mx-auto grid md:grid-cols-3 gap-3 items-center">
-                    <div className=" md:col-span-2 space-y-3">
-                        <div className="space-y-3 shadow p-3 rounded bg-white">
-                            <p className="text-xl ">
-                                BUSINESS CONSULTANCY SERVICES
+                <div className="w-mobile_width md:w-container_width mx-auto  grid md:grid-cols-2 gap-3">
+                    <div className="shadow-sm rounded bg-white p-3">
+                        <div className="flex  h-46">
+                            <img
+                                src="https://res.cloudinary.com/kelvin45/image/upload/v1652050741/Dowins/meeting_zprh5w.jpg"
+                                alt=""
+                                className="object-cover w-full"
+                            />
+                        </div>
+                        <div>
+                            <p className="text-lg py-2 font-semibold">
+                                Business consultancy services
                             </p>
                             <p className="text-gray-700">
                                 {" "}
-                                <span className="font-semibold">
+                                <span className="text-orange">
                                     Management & Strategy
                                 </span>{" "}
-                                -We have a team of qualified personnel with
-                                understanding of your particular market and
-                                ready to bring the best practices from your
-                                industry to your company. If you're looking to
-                                expand your markets geographically, extend your
-                                product portfolio, reorganize your middle market
-                                company to promote efficiency and
-                                cost-effectiveness, buy out a smaller
-                                competitor, or increase your overall
+                                - If you're looking to expand your markets
+                                geographically, extend your product portfolio,
+                                reorganize your middle market company to promote
+                                efficiency and cost-effectiveness, buy out a
+                                smaller competitor, or increase your overall
                                 capabilities, then check out on us for
                                 assistance.
                             </p>
                             <p className="text-gray-700">
                                 {" "}
-                                <span className="font-semibold">
+                                <span className="text-orange">
                                     Operations
                                 </span>{" "}
                                 -We help our customers improve the quality and
                                 efficiency of their production processes.
                             </p>
                         </div>
-                        <div className="space-y-3 shadow p-3 rounded bg-white">
-                            <p className="text-xl ">
-                                HOME/PRIVATE SCHOOLING SERVICES
+                    </div>
+                    <div className="shadow-sm rounded bg-white p-3">
+                        <div className="flex  h-46">
+                            <img
+                                src="https://images.unsplash.com/photo-1557425955-df376b5903c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29hY2hpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt=""
+                                className="object-cover w-full"
+                            />
+                        </div>
+                        <div>
+                            <p className="text-lg py-2 font-semibold">
+                                Home/Private schooling services
                             </p>
                             <p className="text-gray-700">
                                 {" "}
-                                <span className="font-semibold">
+                                <span className="text-orange">
                                     One on One Tutor Student Engagements
                                 </span>{" "}
                                 -Are you looking for a firm with a proper laid
@@ -69,8 +82,8 @@ const Services = () => {
                             </p>
                             <p className="text-gray-700">
                                 {" "}
-                                <span className="font-semibold">
-                                    Performance Counselling
+                                <span className="text-orange">
+                                    Performance counselling
                                 </span>{" "}
                                 -We strive at advancing the performance of
                                 students. We offer relevant talks and coaching
@@ -81,18 +94,25 @@ const Services = () => {
                             </p>
                         </div>
                     </div>
-
-                    <div className="bg-orange p-3 rounded text-gray-50">
-                        <div>
-                            <p className="text-xl text-white ">
-                                TRAINING SOLUTIONS
+                    <div className="shadow-sm rounded bg-white p-3">
+                        <div className="flex  h-46">
+                            <img
+                                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt=""
+                                className="object-cover w-full"
+                            />
+                        </div>
+                        <div className="text-gray-700">
+                            <p className="  text-lg py-2 font-semibold">
+                                Training solutions
                             </p>
                             <p>
-                                Training is a very important component of
-                                organizations.
+                                Training is a very important component of an
+                                organization.
                             </p>
-                            <p className="text-xl text-white">
-                                we mainly focus on these areas
+
+                            <p className="text-orange">
+                                We mainly focus on the following areas;
                             </p>
 
                             <li>Time management</li>
@@ -106,10 +126,28 @@ const Services = () => {
                             <li>How to close sales</li>
                             <li>Lead management</li>
                         </div>
-                        <div>
-                            <p className="text-xl text-white ">
-                                COACHING SOLUTIONS
+                    </div>
+                    <div className="shadow-sm rounded bg-white p-3">
+                        <div className="flex  h-46">
+                            <img
+                                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29hY2hpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt=""
+                                className="object-cover w-full"
+                            />
+                        </div>
+                        <div className="text-gray-700">
+                            <p className="text-lg py-2 font-semibold">
+                                Coaching solutions
                             </p>
+                            <p>
+                                Coaching is also a very important component of
+                                an organization.
+                            </p>
+
+                            <p className="text-orange">
+                                We mainly focus on the following areas;
+                            </p>
+
                             <li>Career coaching & talent management</li>
                             <li>CV writing</li>
                             <li>Interview skills</li>

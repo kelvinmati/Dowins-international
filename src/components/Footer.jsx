@@ -2,17 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <div className="pt-10 bg-blue text-white ">
+        <div className="pt-10 bg-blue text-gray-200 ">
             <div className="w-mobile_width md:w-container_width mx-auto grid md:grid-cols-3 gap-16 md:gap-2  justify-center ">
                 <div className=" flex flex-col  items-center">
-                    <div className="bg-white">
+                    <div className="bg-white p-2">
                         <img
-                            src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,h_140,w_198/v1651792128/logos/logo_qhsxkh.png"
+                            src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,h_124,w_292/v1652213423/logos/png_izw9mc.png"
                             alt=""
                         />
                     </div>
                     <div>
-                        <p className="text-lg text-center mb-3">
+                        <p className="text-lg text-center text-white font-bold my-2">
                             Follow us on:
                         </p>
                         <div className="flex space-x-2.5">
@@ -50,7 +50,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="space-y-1.5 flex flex-col  items-center md:block">
-                    <p className="text-xl">QUICK LINKS</p>
+                    <p className="text-xl text-white font-bold">QUICK LINKS</p>
                     <Link to="/">
                         <li className="list-none">Home</li>
                     </Link>
@@ -65,7 +65,9 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className="space-y-1.5 flex flex-col   md:block">
-                    <p className="text-xl text-center md:text-left">ADDRESS</p>
+                    <p className="text-xl text-center md:text-left text-white font-bold">
+                        ADDRESS
+                    </p>
                     <div className="flex items-center space-x-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

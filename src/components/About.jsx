@@ -24,7 +24,7 @@ const About = () => {
                         <div>
                             <p className="text-lg">HOW WE OPERATE</p>
                             <p className="text-gray-700">
-                                DOWINS INTERNATIONAL Solutions operates under
+                                Dowins International Solutions operates under
                                 the principles of teamwork, Expertise and
                                 Performance. We believe that our performance is
                                 anchored in ensuring the upward projection of

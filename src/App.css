@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,4 +36,8 @@ html {
 
 .previousButton {
     left: 20px;
+}
+
+.carousel-services {
+    background-color: #0062a87a;
 }

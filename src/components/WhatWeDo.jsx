@@ -13,7 +13,7 @@ const WhatWeDo = () => {
                 <div className="space-y-4">
                     <div>
                         <p className="text-2xl">WHAT WE DO</p>
-                        <p className="text-lg text-orange">get to know us</p>
+                        <p className="text-lg text-orange">Get to know us</p>
                     </div>
                     <p>
                         Dowins International Solutions is a company that deals

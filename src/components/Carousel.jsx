@@ -74,18 +74,12 @@ const Carousel = () => {
                                 alt=""
                             />
                         </div>
+                        <div className=" carousel-services absolute z-10 text-orange md:top-40 top-20 md:left-28 left-16 md:w-1/2 w-3/5 p-3 rounded md:text-5xl text-2xl">
+                            <p>{image.service}</p>
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <div className=" bg-blue text-white md:absolute md:right-0 md:bottom-0 z-50 md:w-64  md:rounded-tl-xl p-3 w-mobile_width mx-auto mt-5 rounded md:rounded-none ">
-                <p className="text-xl text-orange">Key areas of operations</p>
-
-                <ul>
-                    <li>Education</li>
-                    <li>Business Operations</li>
-                    <li>Leadership</li>
-                </ul>
-            </div>
         </div>
     );
 };
@@ -93,15 +87,23 @@ const Carousel = () => {
 export default Carousel;
 const images = [
     {
-        img: "https://res.cloudinary.com/kelvin45/image/upload/v1652050758/Dowins/team_xnyolr.jpg",
-    },
-    {
         img: "https://res.cloudinary.com/kelvin45/image/upload/v1651819747/pexels-kampus-production-5940846_kqcvdx.jpg",
+        service: "Corporate and Individual Trainings.",
     },
     {
         img: "https://res.cloudinary.com/kelvin45/image/upload/v1652050741/Dowins/meeting_zprh5w.jpg",
+        service: " Business Consulting ",
+    },
+    {
+        img: "https://images.unsplash.com/photo-1557425955-df376b5903c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29hY2hpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        service: "Home Schooling (IGCSE ,CBC and 8.4.4)",
     },
     {
         img: "https://pbs.twimg.com/media/D1CR6nlWwAAbDgE?format=png&name=small",
+        service: " Human Resource Consulting",
+    },
+    {
+        img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHR1dG9yaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        service: " Coaching solutions",
     },
 ];

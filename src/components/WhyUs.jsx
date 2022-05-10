@@ -6,7 +6,7 @@ const WhyUs = () => {
             <div className="text-center mb-8">
                 <p className="text-2xl">WHY CHOOSE US</p>
                 <p className="text-lg text-orange">
-                    reasons why you should go for Dowins Internaional solutions
+                    Reasons why you should go for Dowins Internaional solutions
                 </p>
             </div>
             <div className=" w-mobile_width md:w-container_width mx-auto  grid md:grid-cols-2 gap-3">
