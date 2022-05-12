@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
 import Carousel from "./components/Carousel";
+import Ceo from "./components/Ceo";
 import Clients from "./components/Clients";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -26,6 +27,7 @@ function App() {
                             <Clients />
                             <Mission />
                             <WhyUs />
+                            <Ceo />
                         </>
                     }
                 />

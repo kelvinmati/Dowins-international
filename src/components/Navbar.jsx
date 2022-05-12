@@ -29,7 +29,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden md:block">
-                        <p className="text-lg font-semibold">Email address</p>
+                        <p className="text-lg ">Email address</p>
                         <div className="flex items-center space-x-2 text-orange">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="hidden md:block">
-                        <p className="text-lg font-semibold">Phone</p>
+                        <p className="text-lg ">Phone</p>
                         <div className="flex items-center space-x-2 text-orange">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -151,8 +151,8 @@ const Navbar = () => {
                         onClick={() => setActive("Home")}
                         className={
                             active === "Home"
-                                ? "list-none text-orange font-semibold"
-                                : "list-none   text-blue font-semibold"
+                                ? "list-none text-orange "
+                                : "list-none   text-blue "
                         }
                     >
                         Home
@@ -164,8 +164,8 @@ const Navbar = () => {
                         onClick={() => setActive("What we do")}
                         className={
                             active === "What we do"
-                                ? "list-none text-orange font-semibold"
-                                : "list-none text-blue font-semibold"
+                                ? "list-none text-orange "
+                                : "list-none text-blue "
                         }
                     >
                         What we do
@@ -177,8 +177,8 @@ const Navbar = () => {
                         onClick={() => setActive("About")}
                         className={
                             active === "About"
-                                ? "list-none text-orange font-semibold"
-                                : "list-none text-blue font-semibold"
+                                ? "list-none text-orange "
+                                : "list-none text-blue "
                         }
                     >
                         About
@@ -189,8 +189,8 @@ const Navbar = () => {
                         onClick={() => setActive("Services")}
                         className={
                             active === "Services"
-                                ? "list-none text-orange font-semibold "
-                                : "list-none text-blue font-semibold"
+                                ? "list-none text-orange  "
+                                : "list-none text-blue "
                         }
                     >
                         Services
@@ -201,8 +201,8 @@ const Navbar = () => {
                         onClick={() => setActive("Contact")}
                         className={
                             active === "Contact"
-                                ? "list-none text-orange font-semibold"
-                                : "list-none text-blue font-semibold"
+                                ? "list-none text-orange "
+                                : "list-none text-blue "
                         }
                     >
                         Contact
