@@ -17,7 +17,7 @@ const Footer = () => {
                         </p>
                         <div className="flex space-x-2.5">
                             <a
-                                href="https://www.facebook.com/DowinsIntl/"
+                                href="https://www.facebook.com/DowinsInternational/"
                                 target="_blank"
                             >
                                 <ion-icon
