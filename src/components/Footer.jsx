@@ -46,6 +46,15 @@ const Footer = () => {
                                     name="logo-twitter"
                                 ></ion-icon>
                             </a>
+                            <a
+                                href="https://www.linkedin.com/in/dowins-international-69b8a923a/"
+                                target="_blank"
+                            >
+                                <ion-icon
+                                    size="large"
+                                    name="logo-linkedin"
+                                ></ion-icon>
+                            </a>
                         </div>
                     </div>
                 </div>

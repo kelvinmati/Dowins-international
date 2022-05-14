@@ -9,7 +9,7 @@ const Ceo = () => {
                 </div>
                 <div>
                     <p className="text-xl text-orange">W.N Douglas</p>
-                    <p>Chief Execcutive Officer (CEO)</p>
+                    <p>Chief Executive Officer (CEO)</p>
                 </div>
             </div>
         </div>
