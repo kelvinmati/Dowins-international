@@ -1,5 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_fp2uqzn",
+                "template_ggrja3v",
+                form.current,
+                "user_GQR0KqhGk7eUTDPiSP1Of"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    alert("Succesfully sent");
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
     return (
         <div className="bg-gray-50">
             <div
@@ -45,28 +68,31 @@ const Contact = () => {
                         Kindly enter your details
                     </p>
                     <form
+                        ref={form}
+                        onSubmit={sendEmail}
                         className="flex flex-col space-y-6"
-                        onSubmit={(e) => e.preventDefault()}
                     >
                         <input
                             className="border p-2 outline-none rounded"
                             type="text"
+                            name="user_name"
                             placeholder="Enter your name"
                         />
                         <input
                             className="border p-2 outline-none rounded"
                             type="email"
+                            name="user_email"
                             placeholder="Enter your email"
                         />
-                        <input
+                        {/* <input
                             className="border p-2 outline-none rounded"
                             type="text"
                             placeholder="Enter phone number"
-                        />
+                        /> */}
                         <textarea
                             className="border p-2 outline-none"
                             placeholder="Leave message here.."
-                            name=""
+                            name="message"
                             id=""
                             cols="20"
                             rows="6"
